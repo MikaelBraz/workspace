@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Aula 06</title>
+  </head>
+
+  <body>
+    <!-- Formularios! -->
+    <form action="mailto:">
+      <label for="">Nome De Usuario -</label>
+      <input type="text" />
+      <br />
+      <label for=""> Telefone - </label>
+      <input type="number" />
+      <br />
+      <label for="">Cep - </label>
+      <input type="number" />
+      <br />
+    
+
+      <br />
+      <br /><br />
+      <h4>Escolha Sua Música!</h4>
+      <input type="radio" name="musica" /> <label for="">Flamingos</label>
+      <br />
+      <input type="radio" name="musica" /> <label for="">Bluesman</label>
+      <br />
+      <input type="radio" name="musica" />
+      <label for="">Minotauro De Borges</label>
+
+      <h4>Sabor Da Pipoca</h4>
+
+      <input type="checkbox" />
+      <label for="">Doce</label>
+      <br />
+      <input type="checkbox" />
+      <label for="">Salgada</label>
+      <br />
+      <input type="checkbox" />
+      <label for="">Mista</label>
+      <br />
+      <br />
+      <input type="range" />
+      <label for="">100</label>
+      <br />
+      <br />
+      <!-- Tag Select -->
+
+      <h5>Sorvetes Disponiveis</h5>
+      <label for=""></label>
+      <br>
+      <select name="" id="">
+        <option value="Selecione">Selecione</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Leite Condensado">Leite Condensado</option>
+        <option value="Avelã">Avelã</option>
+        <option value="Morango C/Leite">Morango C/Leite</option>
+        <option value="Milho Verde">Milho Verde</option>
+
+        <!-- Datalist -->
+        
+        <legend>Filmes</legend>
+        <label for="Filmes">Filmes </label>
+        <input  type="text" list="Filmes">
+        <datalist id="Filmes">
+
+          <option value="Moonlight">Moonlight</option>
+          <option value="BrokeBack Mountain">BrokeBack Mountain</option>
+          <option value="Interstelar">Interstelar</option>
+          <option value="Whiplash">Whiplash</option>
+          <option value="Carandiru">Carandiru</option>
+        </datalist>
+        <!-- TextArea -->
+        <br>
+        <br>
+        <fieldset>
+          <legend>Fale sobre o seu filme favorito</legend>
+          <label for="">Filmes</label>
+          <input type="text">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        </textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Fale sobre o show da Xuxa</legend>
+          <label for="">Show Da Xuxa</label>
+          <input type="text">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        </textarea>
+        </fieldset>
+        <input value="Cadastre-se!" type="submit" />
+
+        
+      </select>
+    </form>
+  </body>
+</html>
