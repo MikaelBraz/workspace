@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 150px;
+    align-items: baseline;
+}
+
+.itens {
+    border: 1px solid green;
+}
+
+.filhos {
+    flex-grow: 4;
+}
+
+@media(max-width:768px) {
+    .col {
+        width: 100%;
+    }
+}
