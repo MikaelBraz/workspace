@@ -2,20 +2,15 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "div1 div1 div2 div2"
-    "div3 div3 div3 div3"
-    "div4 div4 div4 div4"
-    ". div5 div5 ."
-    "div6 div6 div6 div6"
-    "div7 div7 div8 div9";
-} 
+    grid-template-areas: "div1 div1 div2 div2" "div3 div3 div3 div3" "div4 div4 div4 div4"". div5 div5 ." "div6 div6 div6 div6" "div7 div7 div8 div9";
+}
 
 .item-1 {
     border: 1px solid green;
     grid-area: div1;
 }
 
-.item-2 {
+.item-2 {        
     border: 1px solid green;
     grid-area: div2;
 }
