@@ -55,7 +55,35 @@ console.clear()
 
 var osDeVerdadeEuSeiQuemE = true;
 
-console.clear
+console.clear ()
 
-console.log ("five" * 2git)
+console.log ("five" * 2)
+
+console.clear ()
+
+// incremento
+
+var incremento = 2;
+
+incremento = incremento + 1;
+
+console.log(incremento);
+
+console.clear ();
+
+var imparPar = 3%2;
+
+console.log(imparPar);
+
+console.clear ();
+
+var comparacao = 2 > 3;
+
+console.log(comparacao) // true or false; 
+
+console.clear ();
+
+var doisSinaisDeIgual = 3 == 5;
+
+console.log (doisSinaisDeIgual);
 
