@@ -77,7 +77,8 @@ console.log(imparPar);
 
 console.clear ();
 
-var comparacao = 2 > 3;
+var comparacao = 2 <
+ 3;
 
 console.log(comparacao) // true or false; 
 
@@ -87,3 +88,17 @@ var doisSinaisDeIgual = 3 == 5;
 
 console.log (doisSinaisDeIgual);
 
+
+// texto, numero
+// ===
+// 3 == 5 // true   ou
+// numerico = numerico // false
+
+console.clear()
+
+var addNumero = "2";
+
+//addNumero = addNumero + 4;
+// addNumero = 
+
+console.log(typeof addNumero)
