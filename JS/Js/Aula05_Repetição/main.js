@@ -12,9 +12,3 @@ let contador = 1
 
 //do while
 
-let contador = 1
-
-do {
-    console.log(`O número do contador é 
-    ${contador}`);
-} while (contador <= 10);
