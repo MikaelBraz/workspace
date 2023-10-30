@@ -59,3 +59,4 @@ console.log(retiraInicio)
 var colocaInicio = numArray.unshift()
 console,log(numArray)
 console.log(retiraInicio)
+
