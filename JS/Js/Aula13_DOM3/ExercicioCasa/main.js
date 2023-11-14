@@ -1,25 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Dívida</title>
-    <script src="script.js" defer></script>
-</head>
-<body>
+function calcularDivida() {
+    // Obter os valores do input
+    var principal = parseFloat(document.getElementById("principal").value);
+    var taxa = parseFloat(document.getElementById("taxa").value);
+    var parcelas = parseInt(document.getElementById("parcelas").value);
 
-    <label for="principal">Valor Principal: </label>
-    <input type="number" id="principal" placeholder="Insira o valor principal">
+    // Verificar se os valores inseridos são válidos
+    if (isNaN(principal) || isNaN(taxa) || isNaN(parcelas)) {
+        alert("Por favor, insira valores válidos para calcular a dívida.");
+        return;
+    }
 
-    <label for="taxa">Taxa de Juros (%): </label>
-    <input type="number" id="taxa" placeholder="Insira a taxa de juros">
+    // Calcular o montante da dívida usando a fórmula de juros simples
+    var jurosSimples = principal * (1 + (taxa / 100) * parcelas);
 
-    <label for="parcelas">Número de Parcelas: </label>
-    <input type="number" id="parcelas" placeholder="Insira o número de parcelas">
-
-    <button onclick="calcularDivida()">Calcular Dívida</button>
-
-    <p id="resultado"></p>
-
-</body>
-</html>
+    // Exibir o resultado na página
+    document.getElementById("resultado").innerHTML = "Montante da Dívida: R$ " + jurosSimples.toFixed(2);
+}
