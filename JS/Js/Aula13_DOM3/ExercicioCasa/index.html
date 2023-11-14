@@ -3,32 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Salário</title>
+    <title>Calculadora de Dívida</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <label for="salarioAtual">Salário Atual: </label>
-    <input type="number" id="salarioAtual" placeholder="Insira o salário atual">
+    <label for="principal">Valor Principal: </label>
+    <input type="number" id="principal" placeholder="Insira o valor principal">
 
-    <button onclick="calcularNovoSalario()">Calcular Novo Salário</button>
+    <label for="taxa">Taxa de Juros (%): </label>
+    <input type="number" id="taxa" placeholder="Insira a taxa de juros">
+
+    <label for="parcelas">Número de Parcelas: </label>
+    <input type="number" id="parcelas" placeholder="Insira o número de parcelas">
+
+    <button onclick="calcularDivida()">Calcular Dívida</button>
 
     <p id="resultado"></p>
-
-    <script>
-        function calcularNovoSalario() {
-            // Obter o valor do salário atual do input
-            var salarioAtual = parseFloat(document.getElementById("salarioAtual").value);
-
-            // Calcular o aumento de 17%
-            var aumento = salarioAtual * 0.17;
-
-            // Calcular o novo salário considerando o aumento e o reajuste anual de 215 reais
-            var novoSalario = salarioAtual + aumento + 215;
-
-            // Exibir o resultado na página
-            document.getElementById("resultado").innerHTML = "Novo Salário: R$ " + novoSalario.toFixed(2);
-        }
-    </script>
 
 </body>
 </html>
