@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de Salário</title>
 </head>
 <body>
-    <button class="B_12" id="B_01">Botão 1</button>
-  <script src="main.js"></script>
+
+    <label for="salarioAtual">Salário Atual: </label>
+    <input type="number" id="salarioAtual" placeholder="Insira o salário atual">
+
+    <button onclick="calcularNovoSalario()">Calcular Novo Salário</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcularNovoSalario() {
+            // Obter o valor do salário atual do input
+            var salarioAtual = parseFloat(document.getElementById("salarioAtual").value);
+
+            // Calcular o aumento de 17%
+            var aumento = salarioAtual * 0.17;
+
+            // Calcular o novo salário considerando o aumento e o reajuste anual de 215 reais
+            var novoSalario = salarioAtual + aumento + 215;
+
+            // Exibir o resultado na página
+            document.getElementById("resultado").innerHTML = "Novo Salário: R$ " + novoSalario.toFixed(2);
+        }
+    </script>
+
 </body>
 </html>
-
