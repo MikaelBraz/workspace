@@ -14,7 +14,7 @@ const Principal = () => {
           <li key={index}>{filme}</li>
         ))}
       </ul>
-      <img src="caminho_para_a_imagem_do_filme_1.jpg" alt="Filme 1" />
+      <img src="caminho_para_a_imagem_do_filme_1.jpg" alt="Moonlight" />
     </main>
   );
 };
