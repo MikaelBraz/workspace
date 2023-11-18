@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Principal = () => {
-  const filmes = ['Filme 1', 'Filme 2', 'Filme 3', 'Filme 4', 'Filme 5'];
+  const filmes = ['Moonlight', 'Whiplash', 'Brockeback Mountain', 'Interstelar', 'Soul'];
 
   return (
     <main style={{ backgroundColor: 'orange', color: 'purple', padding: '20px' }}>
