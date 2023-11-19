@@ -1,31 +1,22 @@
 function verificarEstacao() {
+    
     var mesDigitado = document.getElementById("mesInput").value.toLowerCase();
-    var estacao;
 
-    switch (mesDigitado) {
-        case "janeiro":
-        case "fevereiro":
-        case "março":
-            estacao = "Verão";
-            break;
-        case "abril":
-        case "maio":
-        case "junho":
-            estacao = "Outono";
-            break;
-        case "julho":
-        case "agosto":
-        case "setembro":
-            estacao = "Inverno";
-            break;
-        case "outubro":
-        case "novembro":
-        case "dezembro":
-            estacao = "Primavera";
-            break;
-        default:
-            estacao = "Mês inválido";
+    
+    var estacao = "";
+    if (mesDigitado === "janeiro" || mesDigitado === "fevereiro" || mesDigitado === "março") {
+        estacao = "Verão";
+    } else if (mesDigitado === "abril" || mesDigitado === "maio" || mesDigitado === "junho") {
+        estacao = "Outono";
+    } else if (mesDigitado === "julho" || mesDigitado === "agosto" || mesDigitado === "setembro") {
+        estacao = "Inverno";
+    } else if (mesDigitado === "outubro" || mesDigitado === "novembro" || mesDigitado === "dezembro") {
+        estacao = "Primavera";
+    } else {
+        alert("Digite um mês válido");
+        return;
     }
 
+  
     alert("Você escreveu o mês de " + mesDigitado + ", e a estação desse mês é " + estacao + ".");
 }
