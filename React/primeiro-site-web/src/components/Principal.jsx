@@ -1,6 +1,8 @@
 
 import React from 'react';
 
+import Moon from '/React/primeiro-site-web/src/img/images (14).jpeg'
+
 const Principal = () => {
   const filmes = ['Moonlight', 'Whiplash', 'Brockeback Mountain', 'Interstelar', 'Soul'];
 
@@ -14,7 +16,7 @@ const Principal = () => {
           <li key={index}>{filme}</li>
         ))}
       </ul>
-      <img src="caminho_para_a_imagem_do_filme_1.jpg" alt="Moonlight" />
+      <img src={Moon} alt="Moonlight" />
     </main>
   );
 };
